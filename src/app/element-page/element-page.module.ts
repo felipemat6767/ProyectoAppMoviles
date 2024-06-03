@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CatalogPageRoutingModule } from './home-routing.module';
+import { ElementPagePageRoutingModule } from './element-page-routing.module';
 
-import { CatalogPage } from './home.page';
+import { ElementPagePage } from './element-page.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CatalogPageRoutingModule
+    ElementPagePageRoutingModule
   ],
-  declarations: [CatalogPage]
+  declarations: [ElementPagePage]
 })
-export class CatalogPageModule {}
+export class ElementPagePageModule {}

@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CatalogPageRoutingModule } from './home-routing.module';
+import { BuscarPageRoutingModule } from './buscar-routing.module';
 
-import { CatalogPage } from './home.page';
+import { BuscarPage } from './buscar.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CatalogPageRoutingModule
+    BuscarPageRoutingModule
   ],
-  declarations: [CatalogPage]
+  declarations: [BuscarPage]
 })
-export class CatalogPageModule {}
+export class BuscarPageModule {}

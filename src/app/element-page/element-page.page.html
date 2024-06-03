@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>element_page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png"  height="200px" />
+    <ion-card-header>
+      <ion-card-title></ion-card-title>
+      <ion-card-subtitle>{{nombre}}</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>
+    <ion-button expand="inline" (click)="irACatalogo()">Volver</ion-button>
+  
+  </ion-card>
+</ion-content>

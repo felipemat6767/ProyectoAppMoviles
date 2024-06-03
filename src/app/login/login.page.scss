@@ -1,0 +1,17 @@
+.logo_usuario{
+    height: 120px;
+    width: 80px; 
+    animation: fotoUsuario 6s ease-in-out infinite;
+}
+@keyframes fotoUsuario {
+    0% {
+      transform: translateX(0rem)translateY(0%);
+    }
+  
+    60% {
+      transform: translateX(2rem) translateY(20%);
+    }
+    100% {
+      transform: translateX(0rem) translateY(0%);
+      }
+  }

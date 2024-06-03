@@ -1,15 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>catalog</ion-title>
+    
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="loginPage">
-  <div class="Home">
+
+<ion-content [fullscreen]="true">
+  <input class=”form-control” type=”text” name=”search”  placeholder="Search here by id,name country"   [(ngModel)]="searchText">
     <ion-grid>
-      <ion-row class>
-        <ion-col *ngFor="let curso of cursos; let i = index" col size="4"> 
-          <ion-card>
+      <ion-row *ngFor="let curso of cursos; let i = index" width=30%>
+        <ion-col *ngIf="curso.nombre === searchText" >
+          <ion-card class="w30" >
           <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png"  height="200px" class="imgCatalogo" />
           <ion-card-header>
             <ion-card-title>{{curso.nombre}}</ion-card-title>
@@ -19,13 +20,10 @@
           <ion-card-content>
             {{curso.descripcion}}
           </ion-card-content>
-
-          <ion-col size="12" class="ion-text-center">
-            <ion-button expand="block" class="ion-text-center" (click)="acceder()"fill="clear" color="transparent">Mas Informacion</ion-button>
-          </ion-col>
         </ion-card>
       </ion-col>
       </ion-row>
+      <ion-button expand="true" (click) ="irAHome()" >Volver a Home </ion-button>
     </ion-grid>
-  </div>
-  </ion-content>
+  
+</ion-content>
